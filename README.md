@@ -30,11 +30,9 @@ Unauthorized use may violate local, national, or international laws.
 ---
 ## 💭 Cloudflare Installation 
 ```
-pkg update
-pkg install wget
-wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64
-chmod +x cloudflared-linux-arm64
-mv cloudflared-linux-arm64 $PREFIX/bin/cloudflared
+pkg update -y
+pkg upgrade -y
+pkg install cloudflared -y
 ```
 
 ---
